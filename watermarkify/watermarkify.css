@@ -1,0 +1,27 @@
+/* CSS Document */
+.watermarkify-wrap{
+	position:relative;
+	overflow:hidden;
+}
+
+.watermarkify-watermark{
+	position:absolute;
+	left:10px;
+	display:block;
+	color:#999;
+	padding-left:2px;
+	
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow:hidden;
+}
+
+.watermarkify-watermark-blurred{
+	opacity:0.5;
+	filter: alpha(opacity = 50);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+
