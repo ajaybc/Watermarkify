@@ -1,0 +1,31 @@
+HOW TO USE (STEP BY STEP)
+-------------------------
+
+Include the watermarkify.css and  jquery.watermarkify.0.5.js along with the latest version of jQuery in the head tag of your html file.
+Now create the text fields or textareas you want the watermark applied to, and add a class or ID to identify it/them. 
+
+Specify the text to be displayed as the watermark in the title tag.
+
+<input title="Enter your name" type="text" />
+<input title="Enter your Password" type="password" />
+<textarea title="Enter your Address"></textarea>
+
+
+Now add this script at the end of the <head> tag.
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".fields").watermarkify();
+});
+</script>
+
+And that’s it. Your fields should be having the watermark texts.
+
+Parameters or Optional Arguments
+--------------------------------
+
+time1 -  Time in milliseconds for the watermark hiding animation
+
+time2 - Time in milliseconds for the watermark display animation
+
+easing - Easing to be applied for the animations. Requires the jQuery easing plugin [included]
