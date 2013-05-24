@@ -67,6 +67,8 @@
 				
 				// HIDE THE WATERMARK WHEN THE USER TYPES
 				thisObj.keyup(function(event){
+					if(event.keyCode == 9) return;
+				
 					if($.browser.msie){
 						thisObj.parent().find(".watermarkify-watermark-inner").hide();
 					}
